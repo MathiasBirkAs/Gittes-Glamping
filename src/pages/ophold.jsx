@@ -1,4 +1,13 @@
-export default function Ophold() {
-    return <h1>🛏️ Ophold siden</h1>;
-  }
-  
+
+
+
+
+import Header from "../components/header/Header";
+
+export default function ophold() {
+  return (
+    <>
+      <Header page="ophold" />
+    </>
+  );
+}
