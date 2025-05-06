@@ -1,20 +1,17 @@
 import styles from "./Header.module.css";
+import logo from "../../assets/logo.png";
+
 
 export default function Header() {
   return (
     <header className={styles.header}>
-      {/* Logo */}
-      <img
-        src="/images/logo.png"
-        alt="Gittes Glamping logo"
-        className={styles.logo}
-      />
+      <div className={styles.overlay} />
 
-      {/* Headline */}
-      <h1 className={styles.title}>Gittes Glamping</h1>
-      <p className={styles.subtitle}>Vi er stolte af at byde dig velkommen</p>
+      <img src={logo} alt="Logo" className={styles.logo} />
 
-      {/* Button */}
+      <h1 className={styles.gittes}>Gittes</h1>
+      <h2 className={styles.glamping}>Glamping</h2>
+
       <button className={styles.button}>BOOK NU</button>
     </header>
   );
