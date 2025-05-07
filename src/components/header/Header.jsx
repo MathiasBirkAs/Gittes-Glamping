@@ -30,7 +30,11 @@ export default function Header({ page }) {
   if (page === "kontakt") {
     return (
       <header className={styles.kontakt}>
-        <h1>Kontakt header</h1>
+        <div className={styles.Kontaktoverlay}></div>
+
+        <img src={logo} alt="Logo" className={styles.logo} />
+        <h1 className={styles.gittes}>kontakt</h1>
+
       </header>
     );
   }
@@ -38,15 +42,21 @@ export default function Header({ page }) {
   if (page === "aktiviteter") {
     return (
       <header className={styles.aktiviteter}>
-        <h1>Aktiviteter header</h1>
+        <div className={styles.aktiviteteroverlay}></div>
+
+        <img src={logo} alt="Logo" className={styles.logo} />
+        <h1 className={styles.gittes}>aktiviteter</h1>
       </header>
     );
   }
 
-  if (page === "min-liste") {
+  if (page === "minliste") {
     return (
       <header className={styles.minliste}>
-        <h1>Min liste header</h1>
+        <div className={styles.Minlisteoverlay}></div>
+
+        <img src={logo} alt="Logo" className={styles.logo} />
+        <h1 className={styles.gittes}>min-liste</h1>
       </header>
     );
   }

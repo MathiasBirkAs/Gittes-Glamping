@@ -1,4 +1,13 @@
-export default function Aktiviteter() {
-    return <h1>🏕️ Aktiviteter siden</h1>;
-  }
-  
+
+
+
+
+import Header from "../components/header/Header";
+
+export default function aktiviteter() {
+  return (
+    <>
+      <Header page="aktiviteter" />
+    </>
+  );
+}

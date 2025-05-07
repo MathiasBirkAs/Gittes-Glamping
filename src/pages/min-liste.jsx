@@ -1,4 +1,12 @@
-export default function MinListe() {
-    return <h1>📝 Min liste siden</h1>;
-  }
-  
+
+
+
+import Header from "../components/header/Header";
+
+export default function minliste() {
+  return (
+    <>
+      <Header page="minliste" />
+    </>
+  );
+}

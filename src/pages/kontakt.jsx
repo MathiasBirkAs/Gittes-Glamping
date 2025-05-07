@@ -1,4 +1,13 @@
-export default function Kontakt() {
-    return <h1>📞 Kontakt siden</h1>;
-  }
-  
+
+
+
+
+import Header from "../components/header/Header";
+
+export default function kontakt() {
+  return (
+    <>
+      <Header page="kontakt" />
+    </>
+  );
+}
