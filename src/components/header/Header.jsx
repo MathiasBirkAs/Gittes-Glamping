@@ -26,6 +26,18 @@ export default function Header({ page }) {
     );
   }
 
+  if (page === "weekendtur") {
+    return (
+      <header className={styles.weekendtur}>
+        <div className={styles.Opholdoverlay}></div>
+
+        <img src={logo} alt="Logo" className={styles.logo} />
+        <h1 className={styles.gittes}>Weekendtur</h1>
+        
+      </header>
+    );
+  }
+
   if (page === "kontakt") {
     return (
       <header className={styles.kontakt}>
