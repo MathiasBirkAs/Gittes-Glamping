@@ -1,7 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./nav.module.css";
 
 export default function Nav({ isOpen, setIsOpen }) {
+  const location = useLocation();
+  const currentPath = location.pathname;
+
   return (
     <>
       <div
@@ -16,16 +19,62 @@ export default function Nav({ isOpen, setIsOpen }) {
       {isOpen && (
         <nav className={styles.nav}>
           <ul>
-            <li><Link to="/ophold" onClick={() => setIsOpen(false)}>Ophold</Link></li>
-            <li><Link to="/kontakt" onClick={() => setIsOpen(false)}>Kontakt</Link></li>
-            <li><Link to="/aktiviteter" onClick={() => setIsOpen(false)}>Aktiviteter</Link></li>
-            <li><Link to="/min-liste" onClick={() => setIsOpen(false)}>Min liste</Link></li>
-            <li><Link to="/admin" onClick={() => setIsOpen(false)}>Backoffice</Link></li>
-            <li><Link to="/weekendtur" onClick={() => setIsOpen(false)}>Weekendtur</Link></li>
+            {[
+              "/ophold",
+              "/aktiviteter",
+              "/kontakt",
+              "/min-liste",
+              "/admin",
+            ].includes(currentPath) && (
+              <li>
+                <Link to="/" onClick={() => setIsOpen(false)}>
+                  Home
+                </Link>
+              </li>
+            )}
+
+            {currentPath !== "/ophold" && (
+              <li>
+                <Link to="/ophold" onClick={() => setIsOpen(false)}>
+                  Ophold
+                </Link>
+              </li>
+            )}
+
+            {currentPath !== "/aktiviteter" && (
+              <li>
+                <Link to="/aktiviteter" onClick={() => setIsOpen(false)}>
+                  Aktiviteter
+                </Link>
+              </li>
+            )}
+
+            {currentPath !== "/kontakt" && (
+              <li>
+                <Link to="/kontakt" onClick={() => setIsOpen(false)}>
+                  Kontakt
+                </Link>
+              </li>
+            )}
+
+            {currentPath !== "/min-liste" && (
+              <li>
+                <Link to="/min-liste" onClick={() => setIsOpen(false)}>
+                  Min liste
+                </Link>
+              </li>
+            )}
+
+            {currentPath !== "/admin" && (
+              <li>
+                <Link to="/admin" onClick={() => setIsOpen(false)}>
+                  Backoffice
+                </Link>
+              </li>
+            )}
           </ul>
         </nav>
       )}
     </>
   );
 }
-
