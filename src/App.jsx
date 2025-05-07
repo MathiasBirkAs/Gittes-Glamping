@@ -7,6 +7,7 @@ import Kontakt from "./pages/kontakt";
 import Aktiviteter from "./pages/aktiviteter";
 import MinListe from "./pages/min-liste";
 import Weekendtur from "./pages/Weekendtur";
+import Footer from "./components/footer/Footer";
 // importér flere sider...
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
     { path: "/kontakt", element: <Kontakt /> },
     { path: "/aktiviteter", element: <Aktiviteter /> },
     { path: "/min-liste", element: <MinListe /> },
-    {path: "/weekendtur", element: <Weekendtur/>}
+    { path: "/weekendtur", element: <Weekendtur /> },
     // { path: "/admin", element: <div>Backoffice</div> },
   ]);
 
@@ -26,6 +27,7 @@ export default function App() {
     <>
       <Nav isOpen={menuOpen} setIsOpen={setMenuOpen} />
       <main>{routes}</main>
+      <Footer />
     </>
   );
 }

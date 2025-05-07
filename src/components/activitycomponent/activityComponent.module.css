@@ -1,0 +1,106 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+.activityCardWrapper {
+  position: relative;
+  width: 390px;
+  margin: 200px auto;
+}
+
+.activityImageContainer {
+  position: relative;
+  width: 389px;
+  height: 311px;
+}
+
+.activityImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.activityOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(77, 77, 77, 0.65);
+}
+
+/* Title Box on top */
+.activityTitleBox {
+  position: absolute;
+  width: 360px;
+  height: 120px;
+  background-color: #c5b496;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  top: -20%;
+  left: 15.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.activityTitle {
+  font-family: "Zen Loop", cursive;
+  font-size: 48px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Info box at bottom */
+.activityInfoBox {
+  position: absolute;
+  width: 360px;
+  height: 120px;
+  background-color: #829b97;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  bottom: -20%;
+  left: 15.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.activityDate,
+.activityTime {
+  font-family: "Zen Loop", cursive;
+  font-size: 28px;
+  color: #fff;
+  margin: 0;
+}
+
+/* Button (reuses your previous style) */
+.readMoreButton {
+  width: 160px;
+  height: 50px;
+  background-color: #6e8a86;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: "Zen Loop", cursive;
+  font-size: 24px;
+  color: #fff;
+}
+
+.readMoreButton:hover {
+  background-color: #577c78;
+}
+
+/* Expanded description box */
+.activityDescription {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ced3cd;
+  border-radius: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #333;
+}
