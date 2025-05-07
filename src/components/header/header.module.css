@@ -7,11 +7,12 @@
   background-image: url('../../assets/image_00.jpg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 890px;
+  width: 390px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   padding: 2rem;
   color: white;
@@ -24,6 +25,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 390px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -33,13 +35,29 @@
   color: white;
   font-family: 'Zen Loop', cursive;
 }
-
-.kontakt{
+.weekendtur{
   position: relative;
   background-image: url('../../assets/image_02.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 390px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  font-family: 'Zen Loop', cursive;
+}
+.kontakt{
+  position: relative;
+  background-image: url('../../assets/image_04.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 390px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -56,6 +74,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 390px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -72,6 +91,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 390px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -137,6 +157,7 @@
   height: 52px;
   z-index: 2;   
   margin-bottom: 1rem;
+  margin-top: -220px;
 }
 
 .gittes {
@@ -155,13 +176,14 @@
 }
 
 .button {
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 1.2rem;
+  font-family: 'Zen Loop', sans-serif;
+  font-size: 2.3rem;
   padding: 0.75rem 2rem;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 30px 0px 30px 0px;
   background-color: transparent;
   color: white;
   cursor: pointer;
+  margin-top: 15px;
   z-index: 2;
 }

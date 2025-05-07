@@ -21,6 +21,7 @@ export default function Nav({ isOpen, setIsOpen }) {
             <li><Link to="/aktiviteter" onClick={() => setIsOpen(false)}>Aktiviteter</Link></li>
             <li><Link to="/min-liste" onClick={() => setIsOpen(false)}>Min liste</Link></li>
             <li><Link to="/admin" onClick={() => setIsOpen(false)}>Backoffice</Link></li>
+            <li><Link to="/weekendtur" onClick={() => setIsOpen(false)}>Weekendtur</Link></li>
           </ul>
         </nav>
       )}
