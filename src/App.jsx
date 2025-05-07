@@ -20,7 +20,7 @@ export default function App() {
     { path: "/aktiviteter", element: <Aktiviteter /> },
     { path: "/min-liste", element: <MinListe /> },
     { path: "/weekendtur", element: <Weekendtur /> },
-    // { path: "/admin", element: <div>Backoffice</div> },
+    { path: "/admin", element: <div>Backoffice</div> },
   ]);
 
   return (

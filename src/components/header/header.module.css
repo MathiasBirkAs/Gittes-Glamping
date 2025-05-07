@@ -50,6 +50,9 @@
   padding: 2rem;
   color: white;
   font-family: 'Zen Loop', cursive;
+
+  position: relative;
+  z-index: 1;
 }
 .kontakt{
   position: relative;

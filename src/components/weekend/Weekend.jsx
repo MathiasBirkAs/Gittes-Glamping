@@ -10,7 +10,7 @@ export default function Weekend() {
           <div className={styles.sec1__text}>
             <h2 className={styles.h1}>Tag væk en weekend, med én du holder af</h2>
             <p className={styles.p}>
-              Trænger du og én du holder af til en velfortjent pause fra hverdagens travlhed? Vores weekendglampingophold er den perfekte måde at forynge krop og sind på, mens i nyder det bedste fra naturen og luksuriøs indkvartering. Vi tilbyder den perfekte kombination af udendørs eventyr og bekvemmeligheder. Du vil bo i rummelige og smukt indrettede telte, udstyret med komfortable senge og alle nødvendige faciliteter. Omgivet af den storslåede natur vil du føle dig i ét med omgivelserne, samtidig med at du nyder komforten ved hjemmet. [...]
+              Trænger du og én du holder af til en velfortjent pause fra hverdagens travlhed? Vores weekendglampingophold er den perfekte måde at forynge krop og sind på, mens i nyder det bedste fra naturen og luksuriøs indkvartering. Vi tilbyder den perfekte kombination af udendørs eventyr og bekvemmeligheder. Du vil bo i rummelige og smukt indrettede telte, udstyret med komfortable senge og alle nødvendige faciliteter. Omgivet af den storslåede natur vil du føle dig i ét med omgivelserne, samtidig med at du nyder komforten ved hjemmet.
             </p>
 
             <ul className={styles.list}>

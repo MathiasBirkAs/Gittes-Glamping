@@ -18,10 +18,10 @@ export default function Nav({ isOpen, setIsOpen }) {
           <ul>
             <li><Link to="/ophold" onClick={() => setIsOpen(false)}>Ophold</Link></li>
             <li><Link to="/kontakt" onClick={() => setIsOpen(false)}>Kontakt</Link></li>
+            <li><Link to="/weekendtur" onClick={() => setIsOpen(false)}>Weekendtur</Link></li>
             <li><Link to="/aktiviteter" onClick={() => setIsOpen(false)}>Aktiviteter</Link></li>
             <li><Link to="/min-liste" onClick={() => setIsOpen(false)}>Min liste</Link></li>
             <li><Link to="/admin" onClick={() => setIsOpen(false)}>Backoffice</Link></li>
-            <li><Link to="/weekendtur" onClick={() => setIsOpen(false)}>Weekendtur</Link></li>
           </ul>
         </nav>
       )}

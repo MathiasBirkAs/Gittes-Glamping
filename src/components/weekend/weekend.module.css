@@ -2,15 +2,20 @@
 
 .sec2 {
   background-color: #33626C;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 30px 0px 0px 0px;
   width: 390px;
-  padding: 4rem 1.5rem 2rem;
+  height: 1010px;
+  padding: 4rem 1.5rem 2rem;  
   margin: 2rem auto;
   text-align: center;
-  z-index: 2;
+  position: relative;
 
-  margin-top: -28px;
+  z-index: 2;
+  margin-top: -30px;
+  margin-bottom: -1px;
+
   padding-top: 70px;
+
 }
 
 .h1 {
