@@ -22,7 +22,6 @@ export default function Header({ page }) {
 
         <img src={logo} alt="Logo" className={styles.logo} />
         <h1 className={styles.gittes}>Vores Ophold</h1>
-        
       </header>
     );
   }
@@ -46,7 +45,6 @@ export default function Header({ page }) {
 
         <img src={logo} alt="Logo" className={styles.logo} />
         <h1 className={styles.gittes}>kontakt</h1>
-
       </header>
     );
   }
