@@ -1,4 +1,12 @@
-.feedbackContainer {
-  height: 100vh;
-  background-color: blanchedalmond;
+.section {
+  padding: 2rem 0;
+  background-color: #f3f3f3; /* eller transparent hvis du vil */
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Zen Loop', cursive;
+  font-size: 2.5rem;
+  color: #2A4F57;
+  margin-bottom: 2rem;
 }

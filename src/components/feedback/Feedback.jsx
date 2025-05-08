@@ -1,15 +1,38 @@
+import { useEffect, useState } from "react";
+import ReviewCard from "./ReviewCard";
 import styles from "./feedback.module.css";
-/* import { feedback } from "../../data/feedback"; */
 
-export default function Feedback() {
-  /* const people = feedback;
-  const listItems = feedback.map((person) => (
-    <li key={person.id}>
-      <p>{person.name + ", " + person.age + " år"}</p>
-      <p>Har været på: {person.activity}</p>
-      <p>{person.review}</p>
-    </li>
-  )); */
-  /* return <ul className={styles.feedbackContainer}>{listItems}</ul>; */
-  return <section className={styles.feedbackContainer}></section>;
+export default function ReviewSection() {
+  const [reviews, setReviews] = useState([]);
+
+  useEffect(() => {
+    async function fetchReviews() {
+      try {
+        const res = await fetch("http://localhost:5000/reviews");
+        const data = await res.json();
+        setReviews(data);
+      } catch (err) {
+        console.error("Fejl ved hentning af reviews:", err);
+      }
+    }
+
+    fetchReviews();
+  }, []);
+
+  return (
+    <section className={styles.section}>
+      <h2 className={styles.heading}>Vores gæster udtaler</h2>
+
+      {reviews.map((review) => (
+        <ReviewCard
+          key={review._id}
+          name={review.name}
+          age={review.age}
+          type={review.stay}
+        >
+          {review.review}
+        </ReviewCard>
+      ))}
+    </section>
+  );
 }
