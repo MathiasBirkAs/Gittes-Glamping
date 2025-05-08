@@ -21,7 +21,9 @@ export default function ReviewSection() {
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>Vores gæster udtaler</h2>
+      <div className={styles.badge}>
+        <h2 className={styles.heading}>Vores gæster <br /> udtaler</h2>
+    	</div>
 
       {reviews.map((review) => (
         <ReviewCard
