@@ -1,4 +1,4 @@
-import { useRoutes } from "react-router-dom";
+import { useLocation, useRoutes } from "react-router-dom";
 import { useState } from "react";
 import Nav from "./components/nav/Nav";
 import Home from "./pages/Home";
@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+    const location = useLocation();
   const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/ophold", element: <Ophold /> },
@@ -29,7 +30,7 @@ export default function App() {
     <>
       <Nav isOpen={menuOpen} setIsOpen={setMenuOpen} />
       <main>{routes}</main>
-      <Footer />
+      {location.pathname !== "/backoffice" && <Footer />}
     </>
   );
 }
