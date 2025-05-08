@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-// import { useAuth } from "../hooks/useAuth";
+import useAuth from "../hooks/useAuth";
 import { Navigate } from "react-router-dom";
 
 export default function Backoffice() {
-  const { user, signedIn } = useAuth();
+  const { user, signedIn } = useAuth(); 
   const [activities, setActivities] = useState([]);
   const [form, setForm] = useState({
     title: "",
@@ -59,11 +59,14 @@ export default function Backoffice() {
     });
     setEditingId(activity._id);
   };
+  
+  console.log("Signed in:", signedIn);
+  console.log("User:", user);
 
-  if (!signedIn || user.role !== "admin") {
+  if (!signedIn || user?.role !== "admin") {
     return <Navigate to="/" />;
   }
-
+  
   return (
     <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
       <h1>Backoffice</h1>

@@ -8,6 +8,7 @@ import Aktiviteter from "./pages/aktiviteter";
 import MinListe from "./pages/min-liste";
 import Footer from "./components/footer/Footer";
 import Backoffice from "./pages/Backoffice";
+import Login from "./pages/Login";
 // importér flere sider...
 
 export default function App() {
@@ -20,6 +21,8 @@ export default function App() {
     { path: "/aktiviteter", element: <Aktiviteter /> },
     { path: "/min-liste", element: <MinListe /> },
     {path: "/backoffice", element: <Backoffice />},
+    { path: "/login", element: <Login/> }
+
   ]);
 
   return (

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { jwtDecode } from "jwt-decode";
 import { useLocalStorage } from "@uidotdev/usehooks";
 
