@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Zen+Loop&display=swap");
 
 .Home {
   position: relative;
-  background-image: url('../../assets/image_00.jpg');
+  background-image: url("../../assets/image_00.jpg");
   background-size: cover;
   background-position: center;
   height: 890px;
@@ -12,16 +10,16 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
   padding: 2rem;
   color: white;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
 }
 
-.ophold{
+.ophold {
   position: relative;
-  background-image: url('../../assets/image_01.jpg');
+  background-image: url("../../assets/image_01.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -33,11 +31,11 @@
   align-items: center;
   padding: 2rem;
   color: white;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
 }
-.weekendtur{
+.weekendtur {
   position: relative;
-  background-image: url('../../assets/image_02.jpg');
+  background-image: url("../../assets/image_02.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -49,11 +47,11 @@
   align-items: center;
   padding: 2rem;
   color: white;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
 }
-.kontakt{
+.kontakt {
   position: relative;
-  background-image: url('../../assets/image_04.jpg');
+  background-image: url("../../assets/image_04.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -65,29 +63,12 @@
   align-items: center;
   padding: 2rem;
   color: white;
-  font-family: 'Zen Loop', cursive;
-}
-
-.aktiviteter{
-  position: relative;
-  background-image: url('../../assets/image_03.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 390px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  color: white;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
 }
 
-.minliste{
+.aktiviteter {
   position: relative;
-  background-image: url('../../assets/image_04.jpg');
+  background-image: url("../../assets/image_03.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -99,7 +80,24 @@
   align-items: center;
   padding: 2rem;
   color: white;
-  font-family: 'Zen Loop', cursive;
+  font-family: "Zen Loop", cursive;
+}
+
+.MinListe {
+  position: relative;
+  background-image: url("../../assets/image_04.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 390px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  font-family: "Zen Loop", cursive;
 }
 
 .overlay {
@@ -108,54 +106,54 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #818181C7;
+  background-color: #818181c7;
   z-index: 1;
 }
 
-.Opholdoverlay{
+.Opholdoverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3636368F;
+  background-color: #3636368f;
   z-index: 1;
 }
 
-.Kontaktoverlay{
+.Kontaktoverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3636368F;
+  background-color: #3636368f;
   z-index: 1;
 }
 
-.Aktiviteteroverlay{
+.Aktiviteteroverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3636368F;
+  background-color: #3636368f;
   z-index: 1;
 }
 
-.Minlisteoverlay{
+.Minlisteoverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #3636368F;
+  background-color: #3636368f;
   z-index: 1;
 }
 
 .logo {
   width: 52px;
   height: 52px;
-  z-index: 2;   
+  z-index: 2;
   margin-bottom: 1rem;
   margin-top: -220px;
 }
@@ -176,7 +174,7 @@
 }
 
 .button {
-  font-family: 'Zen Loop', sans-serif;
+  font-family: "Zen Loop", sans-serif;
   font-size: 2.3rem;
   padding: 0.75rem 2rem;
   border: 1px solid white;

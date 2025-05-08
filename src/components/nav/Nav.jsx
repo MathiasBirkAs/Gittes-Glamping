@@ -21,9 +21,9 @@ export default function Nav({ isOpen, setIsOpen }) {
           <ul>
             {[
               "/ophold",
-              "/aktiviteter",
+              "/activitypage",
               "/kontakt",
-              "/min-liste",
+              "/minliste",
               "/admin",
             ].includes(currentPath) && (
               <li>
@@ -41,9 +41,9 @@ export default function Nav({ isOpen, setIsOpen }) {
               </li>
             )}
 
-            {currentPath !== "/aktiviteter" && (
+            {currentPath !== "/activitypage" && (
               <li>
-                <Link to="/aktiviteter" onClick={() => setIsOpen(false)}>
+                <Link to="/activitypage" onClick={() => setIsOpen(false)}>
                   Aktiviteter
                 </Link>
               </li>
@@ -57,9 +57,9 @@ export default function Nav({ isOpen, setIsOpen }) {
               </li>
             )}
 
-            {currentPath !== "/min-liste" && (
+            {currentPath !== "/minliste" && (
               <li>
-                <Link to="/min-liste" onClick={() => setIsOpen(false)}>
+                <Link to="/MinListe" onClick={() => setIsOpen(false)}>
                   Min liste
                 </Link>
               </li>

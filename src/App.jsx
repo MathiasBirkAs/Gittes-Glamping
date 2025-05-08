@@ -4,11 +4,10 @@ import Nav from "./components/nav/Nav";
 import Home from "./pages/Home";
 import Ophold from "./pages/ophold";
 import Kontakt from "./pages/kontakt";
-import Aktiviteter from "./pages/aktiviteter";
-import MinListe from "./pages/min-liste";
+import ActivityPage from "./pages/activitypage/ActivityPage";
+import MinListe from "./pages/minliste/MinListe";
 import Weekendtur from "./pages/Weekendtur";
 import Footer from "./components/footer/Footer";
-// importér flere sider...
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,8 +16,8 @@ export default function App() {
     { path: "/", element: <Home /> },
     { path: "/ophold", element: <Ophold /> },
     { path: "/kontakt", element: <Kontakt /> },
-    { path: "/aktiviteter", element: <Aktiviteter /> },
-    { path: "/min-liste", element: <MinListe /> },
+    { path: "/activitypage", element: <ActivityPage /> },
+    { path: "/minliste", element: <MinListe /> },
     { path: "/weekendtur", element: <Weekendtur /> },
     // { path: "/admin", element: <div>Backoffice</div> },
   ]);
