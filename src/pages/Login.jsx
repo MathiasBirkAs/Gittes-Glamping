@@ -1,4 +1,5 @@
 import useAuth from "../hooks/useAuth";
+import styles from "../styles/Login.module.css";
 
 export default function Login() {
   const {
@@ -22,8 +23,8 @@ export default function Login() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", maxWidth: "300px", gap: "1rem", margin: "2rem auto" }}>
-      <h2>Login</h2>
+    <form className={styles.loginContainer} onSubmit={handleSubmit}>
+      <h2>Log ind som admin</h2>
       <input
         type="email"
         placeholder="Email"
@@ -37,7 +38,7 @@ export default function Login() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button type="submit">Log ind</button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className={styles.error}>{error}</p>}
     </form>
   );
 }

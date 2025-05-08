@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
 import { Navigate } from "react-router-dom";
+import styles from "../styles/Backoffice.module.css";
 
 export default function Backoffice() {
   const { user, signedIn } = useAuth(); 
@@ -59,20 +60,23 @@ export default function Backoffice() {
     });
     setEditingId(activity._id);
   };
-  
-  console.log("Signed in:", signedIn);
-  console.log("User:", user);
 
   if (!signedIn || user?.role !== "admin") {
     return <Navigate to="/" />;
   }
-  
-  return (
-    <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-      <h1>Backoffice</h1>
 
-      <h2>Activities</h2>
-      <table border="1" cellPadding={10} style={{ marginBottom: "2rem" }}>
+  return (
+    <div className={styles.container}>
+      <div className={styles.headerRow}>
+        <h1 className={styles.pageTitle}>Backoffice</h1>
+        <div className={styles.topLinks}>
+          <a href="/">Back to frontend</a>
+          <a href="#">Edit subscribers</a>
+        </div>
+      </div>
+
+      <h2 className={styles.sectionTitle}>Activities</h2>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>Activity</th>
@@ -83,25 +87,62 @@ export default function Backoffice() {
           {activities.map((a) => (
             <tr key={a._id}>
               <td>{a.title}</td>
-              <td>
-                <button onClick={() => handleEdit(a)}>Update</button>
-                <button onClick={() => handleDelete(a._id)}>Delete</button>
+              <td className={styles.actions}>
+                <button className={styles.actionBtn} onClick={() => handleEdit(a)}>Update</button>
+                <button className={styles.actionBtn} onClick={() => handleDelete(a._id)}>Delete</button>
               </td>
             </tr>
           ))}
         </tbody>
       </table>
 
-      <h2>{editingId ? `Update activity - ${form.title}` : "Add activity"}</h2>
+      <div className={styles.gridForms}>
+        <div className={styles.formBox}>
+          <h2>Add activity</h2>
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <label>Activity</label>
+            <input className={styles.text1} type="text" name="title" placeholder="Enter title" value={form.title} onChange={handleChange} />
 
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "1rem", maxWidth: "400px" }}>
-        <input type="text" name="title" placeholder="Title" value={form.title} onChange={handleChange} />
-        <input type="text" name="weekday" placeholder="Weekday" value={form.weekday} onChange={handleChange} />
-        <input type="text" name="time" placeholder="Time" value={form.time} onChange={handleChange} />
-        <input type="text" name="description" placeholder="Description" value={form.description} onChange={handleChange} />
-        <input type="text" name="image" placeholder="Image URL or filename" value={form.image} onChange={handleChange} />
-        <button type="submit">{editingId ? "Update activity" : "Add new activity"}</button>
-      </form>
+            <label>Date</label>
+            <input className={styles.text1} type="text" name="weekday" placeholder="Enter date" value={form.weekday} onChange={handleChange} />
+
+            <label>Time</label>
+            <input className={styles.text1} type="text" name="time" placeholder="Enter time" value={form.time} onChange={handleChange} />
+
+            <label>Description</label>
+            <input className={styles.text1} type="text" name="description" placeholder="Enter description" value={form.description} onChange={handleChange} />
+
+            <label>Image</label>
+            <input className={styles.text1} type="text" name="image" placeholder="Upload image" value={form.image} onChange={handleChange} />
+
+            <button type="submit" className={styles.actionBtn}>Add new activity</button>
+          </form>
+        </div>
+
+        {editingId && (
+          <div className={styles.formBox}>
+            <h2>Update activity - {form.title}</h2>
+            <form className={styles.form} onSubmit={handleSubmit}>
+              <label>Activity</label>
+              <input className={styles.text1} type="text" name="title" value={form.title} onChange={handleChange} />
+
+              <label>Date</label>
+              <input className={styles.text1} type="text" name="weekday" value={form.weekday} onChange={handleChange} />
+
+              <label>Time</label>
+              <input className={styles.text1} type="text" name="time" value={form.time} onChange={handleChange} />
+
+              <label>Description</label>
+              <textarea className={styles.box1} name="description" value={form.description} onChange={handleChange} />
+
+              <label>Image</label>
+              <input className={styles.text1} type="text" name="image" value={form.image} onChange={handleChange} />
+
+              <button type="submit" className={styles.actionBtn}>Update activity</button>
+            </form>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
