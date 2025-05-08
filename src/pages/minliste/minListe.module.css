@@ -1,0 +1,11 @@
+.ptag {
+  font-family: "Zen Loop", cursive;
+  font-size: 46px;
+  font-weight: 500;
+  color: #33626c;
+  margin: 100px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

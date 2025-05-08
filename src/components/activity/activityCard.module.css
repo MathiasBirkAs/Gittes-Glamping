@@ -5,7 +5,7 @@
 .activityCardWrapper {
   position: relative;
   width: 390px;
-  margin: 200px auto;
+  margin: 250px auto;
 }
 
 .activityImageContainer {
@@ -45,8 +45,9 @@
 
 .activityTitle {
   font-family: "Zen Loop", cursive;
-  font-size: 48px;
-  color: #fff;
+  font-size: 64px;
+  font-weight: 400;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -54,53 +55,85 @@
 .activityInfoBox {
   position: absolute;
   width: 360px;
-  height: 120px;
-  background-color: #829b97;
+  height: auto;
+  background-color: #33626c;
   border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  bottom: -20%;
+  top: 85%;
   left: 15.5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   gap: 4px;
+  padding: 10px;
+  padding-bottom: 20px;
 }
 
-.activityDate,
-.activityTime {
+.activityDate {
   font-family: "Zen Loop", cursive;
-  font-size: 28px;
+  font-weight: 400;
+  font-size: 32px;
   color: #fff;
   margin: 0;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
-/* Button (reuses your previous style) */
-.readMoreButton {
-  width: 160px;
-  height: 50px;
-  background-color: #6e8a86;
+.activityTime {
+  font-family: "Zen Loop", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  margin-left: 50px;
+}
+
+/* Heart Button (for favorites) */
+.heartButton {
+  font-size: 30px;
+  color: white;
+  background: none;
   border: none;
   cursor: pointer;
-  margin-top: 5px;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  font-family: "Zen Loop", cursive;
-  font-size: 24px;
-  color: #fff;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 5px;
 }
 
-.readMoreButton:hover {
-  background-color: #577c78;
+/* Active Heart Button */
+.heartButton.active {
+  color: red;
+}
+
+/* Read More Button */
+.readMoreButton {
+  width: 325px;
+  height: 63px;
+  background-color: #33626c;
+  border: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-family: "Zen Loop", cursive;
+  font-size: 40px;
+  color: #fff;
 }
 
 /* Expanded description box */
 .activityDescription {
+  background-color: #33626c;
   margin-top: 20px;
   padding: 20px;
-  background-color: #ced3cd;
+  font-weight: 400;
+  font-size: 20px;
   border-radius: 20px;
-  font-family: "Nanum Gothic", sans-serif;
-  color: #333;
+  font-family: "Zen Loop", cursive;
+  color: #ffffff;
 }

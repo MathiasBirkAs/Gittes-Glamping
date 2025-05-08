@@ -23,7 +23,6 @@
   flex-direction: row;
   justify-content: center;
   gap: 21px;
-  margin-bottom: 40px;
 }
 
 .socialIcons {
@@ -43,7 +42,7 @@
   align-items: center;
   gap: 10px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 .logo {
