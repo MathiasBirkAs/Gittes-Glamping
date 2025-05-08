@@ -47,7 +47,14 @@
   align-items: center;
   padding: 2rem;
   color: white;
+<<<<<<< HEAD
   font-family: "Zen Loop", cursive;
+=======
+  font-family: 'Zen Loop', cursive;
+
+  position: relative;
+  z-index: 1;
+>>>>>>> 4ec821c9554b10aee8bdf9abde2e09f0bf7f113e
 }
 .kontakt {
   position: relative;
