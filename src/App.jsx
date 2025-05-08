@@ -7,6 +7,7 @@ import Kontakt from "./pages/kontakt";
 import Aktiviteter from "./pages/aktiviteter";
 import MinListe from "./pages/min-liste";
 import Footer from "./components/footer/Footer";
+import Backoffice from "./pages/Backoffice";
 // importér flere sider...
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
     { path: "/kontakt", element: <Kontakt /> },
     { path: "/aktiviteter", element: <Aktiviteter /> },
     { path: "/min-liste", element: <MinListe /> },
-    { path: "/admin", element: <div>Backoffice</div> },
+    {path: "/backoffice", element: <Backoffice />},
   ]);
 
   return (

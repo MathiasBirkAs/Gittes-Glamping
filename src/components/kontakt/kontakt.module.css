@@ -63,3 +63,11 @@
     margin-top: 2rem;
   }
   
+  .sent {
+    text-align: center;
+    font-family: 'Zen Loop';
+    font-size: 1.6rem;
+    color: white;
+    padding: 4rem 1rem;
+  }
+  
