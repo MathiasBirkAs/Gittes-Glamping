@@ -22,7 +22,7 @@ export default function ReviewSection() {
   return (
     <section className={styles.section}>
       <div className={styles.badge}>
-        <h2 className={styles.heading}>Vores gæster <br /> udtaler</h2>
+        <h2 className={styles.heading}>Vores gæster <br /> udtaler hej</h2>
     	</div>
 
       {reviews.map((review) => (
